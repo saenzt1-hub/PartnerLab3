@@ -14,20 +14,11 @@ struct Card: Identifiable {
     var isMatched: Bool = false
 }
 
-struct ConfettiPiece: Identifiable {
-    let id = UUID()
-    let color: Color
-    let x: CGFloat
-    let y: CGFloat
-    let rotation: Double
-    let scale: CGFloat
-}
 
 
 class MemoryGameViewModel: ObservableObject {
     @Published private(set) var cards: [Card] = []
     @Published private(set) var selectedCards: [Int] = []
-    @Published var showConfetti: Bool = false
     
     private let flowers = ["flower1", "flower2","flower3", "flower4", "flower5", "flower6", "flower7", "flower8", "flower9","flower10", "flower11", "flower12"]
     
@@ -35,15 +26,11 @@ class MemoryGameViewModel: ObservableObject {
     init() {
         startNewGame()
     }
-    
-    var isGameWon: Bool {
-        !cards.isEmpty && cards.allSatisfy { $0.isMatched }
-    }
+
     
     func startNewGame() {
         cards = createGameCards(for: Array(flowers.prefix(6)))
         selectedCards = []
-        showConfetti = false
     }
     
     func selectCard(at index: Int) {
