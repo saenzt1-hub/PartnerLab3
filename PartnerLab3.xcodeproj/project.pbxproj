@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		9F91E8B62EB2944D0000AF65 /* PartnerLab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartnerLab3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F91E8DD2EB93E140000AF65 /* PartnerLab3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = PartnerLab3.app; path = "/Users/tainasaenz/Desktop/PartnerLab3/build/Debug-iphoneos/PartnerLab3.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -33,16 +33,7 @@
 			isa = PBXGroup;
 			children = (
 				9F91E8B82EB2944D0000AF65 /* PartnerLab3 */,
-				9F91E8B72EB2944D0000AF65 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		9F91E8B72EB2944D0000AF65 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9F91E8B62EB2944D0000AF65 /* PartnerLab3.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -67,7 +58,7 @@
 			packageProductDependencies = (
 			);
 			productName = PartnerLab3;
-			productReference = 9F91E8B62EB2944D0000AF65 /* PartnerLab3.app */;
+			productReference = 9F91E8DD2EB93E140000AF65 /* PartnerLab3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +86,7 @@
 			mainGroup = 9F91E8AD2EB2944D0000AF65;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 9F91E8B72EB2944D0000AF65 /* Products */;
+			productRefGroup = 9F91E8AD2EB2944D0000AF65;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
