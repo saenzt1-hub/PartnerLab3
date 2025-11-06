@@ -1,9 +1,10 @@
-// Partner Lab 2
+// Partner Lab 3
 // Group #2
 // Taina Saenz and Tori Zhang
-// October 14, 2025
+// November 11, 2025
 
 import SwiftUI
+import Combine
 
 // Main view/game layout which includes the grid and title
 struct ContentView: View {

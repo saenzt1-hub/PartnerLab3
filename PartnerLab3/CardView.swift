@@ -1,9 +1,7 @@
-//
-//  CardView.swift
-//  PartnerLab3
-//
-//  Created by Taina Saenz on 11/3/25.
-//
+// Partner Lab 3
+// Group #2
+// Taina Saenz and Tori Zhang
+// November 11, 2025
 
 import SwiftUI
 
