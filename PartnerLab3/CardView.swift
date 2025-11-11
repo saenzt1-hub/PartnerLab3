@@ -27,9 +27,17 @@ struct CardView: View {
                 
             } else {
                 // Face down state: show the card back (blue rectangle)
-                shape
-                    .fill(Color.blue)
+                                // >>> ANIMATION ADDITION
+                                withAnimation(.easeInOut(duration:0.3)) {
+                                    shape
+                                        .fill(Color.blue)
+                                        .transition(.opacity)
+                                }
+                            }
+                        }
+                        // >>> ANIMATION ADDITION
+                        // Animate whenever face-up or matched state changes
+                        .animation(.easeInOut(duration: 0.3), value: card.isFaceUp)
+                        .animation(.easeInOut(duration: 0.3), value: card.isMatched)
             }
         }
-    }
-}

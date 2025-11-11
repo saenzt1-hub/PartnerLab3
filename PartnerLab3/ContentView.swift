@@ -51,7 +51,9 @@ struct ContentView: View {
                 
                 // Add a button to reset the game
                 Button("New Game") {
-                    viewModel.startNewGame()
+                    withAnimation(.spring()) {
+                        viewModel.startNewGame()
+                    }
                 }
                 .padding()
                 .background(Color.blue)

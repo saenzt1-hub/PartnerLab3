@@ -46,13 +46,35 @@ class MemoryGameViewModel: ObservableObject {
     
     // creates cards for game
     private func createGameCards(for content: [String]) -> [Card] {
+        
+        var newCards: [Card] = []
+          for name in content {
+              newCards.append(Card(imageName: name))
+              newCards.append(Card(imageName: name))
+          }
         return newCards.shuffled()
 
     }
     
     // func to check for match
     private func checkForMatch() {
-
-        
+        let index1 = selectedCards[0]
+        let index2 = selectedCards[1]
+                
+        if cards[index1].imageName == cards[index2].imageName {
+            cards[index1].isMatched = true
+            cards[index2].isMatched = true
+            selectedCards = []
+        } else {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.7) { [weak self] in
+                guard let self = self else { return }
+                withAnimation(.easeOut(duration: 0.2)) {
+                    self.cards[index1].isFaceUp = false
+                    self.cards[index2].isFaceUp = false
+                    self.selectedCards = []
+                }
+                        
+        }
+    }
     }
 }
