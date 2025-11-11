@@ -46,15 +46,13 @@ class MemoryGameViewModel: ObservableObject {
     
     // creates cards for game
     private func createGameCards(for content: [String]) -> [Card] {
-  
-        
         return newCards.shuffled()
 
     }
     
     // func to check for match
     private func checkForMatch() {
-  
+
         
     }
 }
