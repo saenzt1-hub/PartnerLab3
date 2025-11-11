@@ -3,6 +3,7 @@
 // Taina Saenz and Tori Zhang
 // November 11, 2025
 
+// main foundation for code
 import Foundation
 
 struct Card: Identifiable, Equatable {

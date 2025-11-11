@@ -5,7 +5,7 @@
 
 import SwiftUI
 
-
+// CardView
 struct CardView: View {
     let card: Card
     
