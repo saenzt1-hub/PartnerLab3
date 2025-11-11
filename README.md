@@ -1,4 +1,21 @@
-Hello! This our app, and we have added a new animation, spring!!
+Structure/Code:
+
+Hello! This is our app, and we have incorporated the MVVM structure into our project!
+The code is very similar to what we already had in our Partner Lab 2, but with some additions and the code being separated
+into different files (Card, CardView, ContentView, and MemoryGameViewModel).
+It was definitely very interesting to use the MVVM structure, but definitely helped us out when it came to organization.
+Besides the new animation, our game is the same as last time, but we hope you enjoy it!!
+
+Video for MVVM Structure:
+
+
+
+
+
+Animation:
+
+
+Hello! This is our app, and we have added a new animation, spring!!
 This animation occurs when you press the "New Game" button.
 It adds a nice, fun touch and really engages players to keep playing!
 We wanted to add this and the original ease in/out animations because of how fun they are,
